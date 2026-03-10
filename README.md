@@ -1,9 +1,10 @@
 # Motion Planning
 
+![screenshot](assets/screenshot.png)
+
 3D pathfinding visualization for autonomous robot navigation
 
 ## Build
-
 ```bash
 mkdir build && cd build
 cmake ..
