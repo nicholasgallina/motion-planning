@@ -6,7 +6,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(motion-planning
     src/main.cpp
+    src/collision.cpp
+    src/astar.cpp
 )
+
+target_include_directories(motion-planning PRIVATE include)
 
 find_package(raylib 5.0 QUIET)
 if (NOT raylib_FOUND)
